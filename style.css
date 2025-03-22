@@ -243,31 +243,3 @@ footer .redes a {
 footer .redes a:hover {
     color: #660000;
 }
-
-/* MODO OSCURO */
-body.modo-oscuro {
-    background-color: var(--fondo-oscuro);
-    color: var(--texto-oscuro);
-}
-
-body.modo-oscuro .receta {
-    background-color: #2a2a2a;
-}
-
-body.modo-oscuro nav {
-    background-color: #333;
-}
-
-body.modo-oscuro footer {
-    background-color: #222;
-}
-
-body.modo-oscuro .nav-left a {
-    background: #eee;
-    color: #222;
-}
-
-body.modo-oscuro #modo-toggle {
-    background: #eee;
-    color: #222;
-}

@@ -13,10 +13,6 @@
 <body>
 
 <nav>
-    <button id="modo-toggle"
-            aria-label="Cambiar modo">
-        <i class="fas fa-sun"></i>
-    </button>
     <div class="nav-left">
         <ul>
             <li><a href="#nosotros">Nosotros</a></li>
@@ -177,15 +173,5 @@
         <a href="#"><i class="fab fa-x-twitter"></i></a>
     </div>
 </footer>
-
-<script>
-    const toggle = document.getElementById('modo-toggle');
-    const icono = toggle.querySelector('i');
-    toggle.addEventListener('click', () => {
-        document.body.classList.toggle('modo-oscuro');
-        icono.classList.toggle('fa-sun');
-        icono.classList.toggle('fa-moon');
-    });
-</script>
 </body>
 </html>
