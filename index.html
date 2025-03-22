@@ -1,164 +1,149 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8"/>
+    <meta name="Author"
+          content="Eduardo Cortés">
+    <meta name="description"
+          content="Proyecto html y css para la asignatura de desarrollo web">
+    <meta name="keywords"
+          content="HTML, CSS">
+    <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, initial-scale=1.0"/>
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet"
+          href="style.css">
+    <link rel="shortcut icon"
+          href="img/ico_chile.svg.png"
+          type="image/x-icon">
     <title>Sabores de Chile</title>
-    <link rel="stylesheet"
-          href="style.css"/>
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-
-<nav>
-    <div class="nav-left">
-        <ul>
-            <li><a href="#nosotros">Nosotros</a></li>
-            <li><a href="#recetas">Recetas</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </div>
-</nav>
-
-<header class="hero"
-        id="inicio">
-    <div class="container">
-        <div class="texto">
-            <h1>Sabores de Chile</h1>
-            <p>Explora la riqueza de la cocina chilena desde tu pantalla</p>
+<header>
+    <nav>
+        <div class="logo">
+            <img src="logo.png"
+                 alt="Logo Sabores de Chile"/>
         </div>
-        <div class="imagen">
-            <img src="https://images.unsplash.com/photo-1586810724476-c294fb7ac01b"
-                 alt="Chef chileno">
+        <input type="checkbox"
+               id="menu-toggle"
+               hidden/>
+        <label for="menu-toggle"
+               class="nav-toggle"
+               aria-label="Abrir menú">
+            <span class="open">&#9776;</span>
+            <span class="close">&times;</span>
+        </label>
+        <div class="nav-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#recetas">Recetas</a>
+            <a href="#contacto">Contacto</a>
         </div>
-    </div>
+    </nav>
 </header>
 
-<section id="nosotros"
-         class="seccion pantalla-completa">
+<section class="hero"
+         id="inicio">
     <div class="container">
-        <div class="texto">
-            <h2>Sobre Nosotros</h2>
-            <p>Somos un equipo apasionado por la gastronomía chilena. Nuestro objetivo es rescatar
-               sabores tradicionales y llevarlos a tu mesa con recetas detalladas, historia y
-               sabor.</p>
+        <h1>Sabores de Chile</h1>
+        <p>Descubre nuestras recetas tradicionales chilenas y sorprende tu paladar.</p>
+        <img src="https://img.freepik.com/vektoren-premium/chilenische-speisekarte-gerichte-und-mahlzeiten-der-chilenischen-kueche_8071-46898.jpg"
+             alt="Comida Chilena">
+    </div>
+</section>
+
+<section class="container"
+         id="nosotros">
+    <img src="https://loukinenson4th.com/wp-content/uploads/2019/07/AdobeStock_109909275-1024x674.jpeg"
+         alt="chef decorando platos">
+    <h2 class="section-title">Sobre Nosotros</h2>
+    <p>Amamos la cocina chilena. Nuestro objetivo es rescatar y compartir las recetas que nos
+       representan cultural y gastronómicamente.</p>
+</section>
+
+<section class="container"
+         id="recetas">
+    <h2 class="section-title">Recetas Chilenas</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="https://www.tipicochileno.cl/wp-content/uploads/2021/05/empanada-chilena-1200-628.jpg"
+                 alt="Empanadas Chilenas">
+            <h3>Empanadas de Pino</h3>
+            <ul>
+                <li>Carne picada</li>
+                <li>Cebolla</li>
+                <li>Huevo duro</li>
+                <li>Aceitunas</li>
+                <li>Masa de empanada</li>
+            </ul>
+            <p>Sofríe la cebolla con carne, rellena la masa, agrega huevo y aceituna, hornea hasta
+               dorar.</p>
         </div>
-        <div class="imagen">
-            <img src="https://images.unsplash.com/photo-1606788075761-3f67e265b9d5"
-                 alt="Cocina chilena tradicional">
+        <div class="card">
+            <img src="https://www.gutekueche.at/storage/media/recipe/31635/conv/pastel-de-choclo-default.jpg"
+                 alt="Pastel de Choclo">
+            <h3>Pastel de Choclo</h3>
+            <ul>
+                <li>Choclo molido</li>
+                <li>Carne molida</li>
+                <li>Pollo</li>
+                <li>Huevo duro</li>
+                <li>Pasas</li>
+            </ul>
+            <p>Prepara el pino, coloca en fuente, cubre con choclo molido y hornea hasta dorar.</p>
+        </div>
+        <div class="card">
+            <img src="https://www.gourmet.cl/wp-content/uploads/2011/03/cazuela_de_vacuno.jpg"
+                 alt="Cazuela Chilena">
+            <h3>Cazuela</h3>
+            <ul>
+                <li>Pollo o vacuno</li>
+                <li>Papas</li>
+                <li>Zapallo</li>
+                <li>Choclo</li>
+                <li>Arroz</li>
+            </ul>
+            <p>Hierve carne, añade verduras por orden de cocción, sazona y sirve caliente.</p>
+        </div>
+        <div class="card">
+            <img src="https://www.gourmet.cl/wp-content/uploads/2012/01/Humitas-e1325692985982.jpg"
+                 alt="Humitas Chilenas">
+            <h3>Humitas</h3>
+            <ul>
+                <li>Choclo rallado</li>
+                <li>Cebolla</li>
+                <li>Albahaca</li>
+                <li>Manteca</li>
+                <li>Sal</li>
+            </ul>
+            <p>Mezcla ingredientes, envuelve en hojas de choclo, cuece en agua con sal.</p>
         </div>
     </div>
 </section>
 
-<section id="recetas"
-         class="contenido recetas">
-    <h2>Recetas Chilenas</h2>
-
-    <!-- Receta 1 -->
-    <article class="receta">
-        <img src="https://images.unsplash.com/photo-1601057273171-0f34e4e0617d"
-             alt="Empanadas de pino"/>
-        <h3>Empanadas de Pino</h3>
-        <h4>Ingredientes:</h4>
-        <ul>
-            <li>500g carne molida</li>
-            <li>2 cebollas picadas</li>
-            <li>Huevos duros, aceitunas, pasas</li>
-            <li>Masa de empanadas</li>
-        </ul>
-        <h4>Preparación:</h4>
-        <p>Saltea la cebolla, añade la carne y condimenta. Rellena la masa con el pino, huevo,
-           aceituna y pasa. Cierra y hornea a 200°C por 25 minutos.</p>
-    </article>
-
-    <!-- Receta 2 -->
-    <article class="receta">
-        <img src="https://images.unsplash.com/photo-1627308595229-7830a5c91f9f"
-             alt="Pastel de choclo"/>
-        <h3>Pastel de Choclo</h3>
-        <h4>Ingredientes:</h4>
-        <ul>
-            <li>Pino de carne</li>
-            <li>Choclo molido</li>
-            <li>Pollo, huevo, aceituna</li>
-            <li>Azúcar</li>
-        </ul>
-        <h4>Preparación:</h4>
-        <p>Coloca el pino en una fuente, cubre con la mezcla de choclo, decora con azúcar y hornea
-           hasta dorar.</p>
-    </article>
-
-    <!-- Receta 3 -->
-    <article class="receta">
-        <img src="https://images.unsplash.com/photo-1605478371114-b26e8a6b31aa"
-             alt="Cazuela"/>
-        <h3>Cazuela</h3>
-        <h4>Ingredientes:</h4>
-        <ul>
-            <li>Carne de vacuno o pollo</li>
-            <li>Papas, zapallo, choclo</li>
-            <li>Porotos verdes, arroz</li>
-        </ul>
-        <h4>Preparación:</h4>
-        <p>Hierve la carne con verduras y arroz. Cocina todo hasta ablandar. Sirve caliente con su
-           caldo.</p>
-    </article>
-
-    <!-- Receta 4 -->
-    <article class="receta">
-        <img src="https://images.unsplash.com/photo-1603133872873-4a09b7081ba9"
-             alt="Porotos granados"/>
-        <h3>Porotos Granados</h3>
-        <h4>Ingredientes:</h4>
-        <ul>
-            <li>Porotos granados</li>
-            <li>Zapallo, choclo, cebolla</li>
-            <li>Albahaca, sal</li>
-        </ul>
-        <h4>Preparación:</h4>
-        <p>Hierve los porotos, añade el zapallo molido, choclo y condimenta con sofrito y albahaca.
-           Cocina todo hasta espesar.</p>
-    </article>
-
-    <!-- Receta 5 -->
-    <article class="receta">
-        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd"
-             alt="Completo chileno"/>
-        <h3>Completo Chileno</h3>
-        <h4>Ingredientes:</h4>
-        <ul>
-            <li>Pan de hot dog</li>
-            <li>Salchicha</li>
-            <li>Palta, tomate, mayonesa</li>
-        </ul>
-        <h4>Preparación:</h4>
-        <p>Cocina la salchicha, monta en el pan y cubre con palta molida, tomate picado y mayonesa a
-           gusto.</p>
-    </article>
-</section>
-
-<section id="contacto"
-         class="contenido contacto">
-    <h2>Contacto</h2>
+<section class="container"
+         id="contacto">
+    <h2 class="section-title">Contáctanos</h2>
     <form>
-        <label for="nombre">Nombre:</label>
+        <label for="nombre">Nombre</label>
         <input type="text"
                id="nombre"
                name="nombre"
-               required>
+               placeholder="Tu nombre"
+               required/>
 
-        <label for="correo">Correo:</label>
+        <label for="correo">Correo electrónico</label>
         <input type="email"
                id="correo"
                name="correo"
-               required>
+               placeholder="Tu correo"
+               required/>
 
-        <label for="mensaje">Mensaje:</label>
+        <label for="mensaje">Mensaje</label>
         <textarea id="mensaje"
                   name="mensaje"
-                  rows="4"
+                  rows="5"
+                  placeholder="Escribe tu mensaje..."
                   required></textarea>
 
         <button type="submit">Enviar</button>
@@ -166,12 +151,7 @@
 </section>
 
 <footer>
-    <p>Creado por Tu Nombre</p>
-    <div class="redes">
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-x-twitter"></i></a>
-    </div>
+    <p>2025 Sabores de Chile. Trabajo para la asignatura de desarrollo web.</p>
 </footer>
 </body>
 </html>
